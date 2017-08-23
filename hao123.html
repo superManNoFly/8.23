@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .pink{
+            background: pink;
+        }
+        .yellow{
+            background: yellow;
+        }
+        .red{
+            background: red;
+        }
+        .blue{
+            background:blue;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var oBtn1=document.getElementById("btn1");
+            var oBtn2=document.getElementById("btn2");
+            var oBtn3=document.getElementById("btn3");
+            var oBody=document.getElementById("body");
+            oBtn1.onclick=function () {
+                oBody.className="yellow"
+            }
+            oBtn2.onclick=function () {
+                oBody.className="red"
+            }
+            oBtn3.onclick=function () {
+                oBody.className="blue"
+            }
+        }
+    </script>
+</head>
+<body class="pink" id="body">
+    <input type="button" value="皮肤1" id="btn1">
+    <input type="button" value="皮肤2" id="btn2">
+    <input type="button" value="皮肤3" id="btn3">
+</body>
+</html>

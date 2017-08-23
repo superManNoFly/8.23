@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <script>
+        window.onload=function () {
+
+
+        var oBtn1=document.getElementById("btn1");
+        var oBtn2=document.getElementById("btn2");
+        var oBtn3=document.getElementById("btn3");
+        var oBody=document.body;
+            oBtn1.onclick=function () {
+                oBody.style.background="yellow"
+            }
+            oBtn2.onclick=function () {
+                oBody.style.background="red"
+            }
+            oBtn3.onclick=function () {
+                oBody.style.background="pink"
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="换肤1" id="btn1">
+    <input type="button" value="换肤2" id="btn2">
+    <input type="button" value="换肤3" id="btn3">
+</body>
+</html>

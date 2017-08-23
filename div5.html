@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+    <style>
+        #box1{
+            width: 100px;
+            height:100px;
+            background:red;
+        }
+    </style>
+    <script>
+
+                function toBig() {
+                    var oBox1=document.getElementById("box1");
+                    oBox1.style.width="500px";
+                    oBox1.style.height="500px";
+                    oBox1.style.background="red";
+                }
+                function toSmall() {
+                    var oBox1=document.getElementById("box1");
+                    oBox1.style.width="100px";
+                    oBox1.style.height="100px";
+                    oBox1.style.background="blue";
+                }
+    </script>
+</head>
+<body>
+    <div id="box1" onmouseover="toBig();" onmouseout="toSmall();"></div>
+</body>
+</html>
